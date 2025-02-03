@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // عناصر التحكم بالثيم
+
     const themeToggleButton = document.getElementById('themeToggle');
     const sunIcon = document.getElementById('sunIcon');
     const moonIcon = document.getElementById('moonIcon');
@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
         topBar.style.boxShadow = `0 0 ${glowStrength * 0.5}px rgba(255, 215, 0, 1)`;
     });
 
-    // معالجة الروابط بناءً على بيئة GitHub Pages
     const isGitHubPages = window.location.hostname.includes('github.io');
     const blockedExtensions = ['.html', '.css', '.js', '.png'];
 
@@ -124,4 +123,12 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const CurrentUrl = window.location.href;
+    const BaseUrl = 'https://HealerPlusMC.github.io';
+
+    if (CurrentUrl === BaseUrl || CurrentUrl === `${BaseUrl}/`) {
+        window.location.href = `${BaseUrl}/Index#Home`;
+    }
 });
