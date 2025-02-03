@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Healer's Personal Website - Website Developer & Minecraft Modder">
+    <title>Healer's Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/Healer's Profile Photo Circle.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="images/Healer's Profile Photo Circle.png" as="image">
+    <link rel="preload" href="styles/main.css" as="style">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="#Home" class="Healer-link">
+            <img src="images/Healer's Profile Photo Circle.png" alt="Healer's Profile Photo" class="profile-icon" loading="lazy">
+        </a>
+        <a href="#Home" class="Healer-link">Home</a>
+        <a href="#Projects" class="Healer-link">Projects</a>
+        <a href="#Contact" class="Healer-link">Contact</a>
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+            <img src="images/sun.png" alt="Sun" id="sunIcon">
+            <img src="images/moon.png" alt="Moon" id="moonIcon" style="display: none;">
+        </button>
+    </div>
+
+    <!-- Home Section -->
+    <section id="Home">
+        <div class="intro-text">
+            <h1>Hello, My Name is</h1>
+            <h2>Healer</h2>
+            <p>Website Developer | Minecraft Modder (Java Edition)</p>
+        </div>
+    </section>
+
+    <!-- Mods Section -->
+    <section id="Projects">
+        <h1>Welcome to <span class="healer">Mods</span> Page</h1>
+        <p>This page will show all the mods available.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact">
+        <h1>Official <span class="healer">Accounts</span></h1>
+        <p>Here you can see all Healer Official Accounts</p>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/HealerPlusMC" target="_blank" class="social-btn">
+                <img src="images/facebook-dark.png" alt="Facebook" class="social-icon" loading="lazy" data-dark="images/facebook-light.png" data-light="images/facebook-dark.png">
+            </a>
+            <a href="https://www.youtube.com/@HealerPlusMC" target="_blank" class="social-btn">
+                <img src="images/youtube-dark.png" alt="Youtube" class="social-icon" loading="lazy" data-dark="images/youtube-light.png" data-light="images/youtube-dark.png">
+            </a>
+        </div>
+        <p>You can join my Discord server from this link: <a href="https://discord.gg/VVztDJgJ">Discord</a></p>
+    </section>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>
