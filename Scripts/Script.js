@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 document.addEventListener('DOMContentLoaded', () => {
     const CurrentUrl = window.location.href;
-    const BaseUrl = 'https://HealerPlusMC.github.io';
+    const BaseUrl = 'https://healerplusmc.github.io';
 
     if (CurrentUrl === BaseUrl || CurrentUrl === `${BaseUrl}/`) {
         window.location.href = `${BaseUrl}/Index#Home`;
